@@ -10,7 +10,7 @@ arquivo_csv = csv.writer(open('nomes_artistas_z.csv', 'w', newline='\n'))
 arquivo_csv.writerow(['Nomes_Artistas', 'URL_Artistas'])
 
 for num_page in range(1, 5):
-    paginas.append(f"https://web.archive.org/web/20121007172955/http://www.nga.gov/collection/anZ{num_page}.htm")
+    paginas.append(f"https://web.archive.org/web/20121007172955/https://www.nga.gov/collection/anZ{num_page}.htm")
 
 for url_por_pagina in paginas:
     pagina = requests.get(url_por_pagina)
